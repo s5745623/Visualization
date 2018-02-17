@@ -1,0 +1,195 @@
+---
+title: "HW5"
+author: "StevenChang"
+date: "10/9/2017"
+output: html_document
+---
+#Part I
+```{r}
+library(stats)
+library(quantmod)
+data = read.csv('wages.csv')
+summary(data)
+#attach(data)
+```
+
+```{r}
+par(mfrow = c(2, 2),
+oma = c(0, 0, 2, 0),
+mar = c(5.1, 4.1, 2.1, 2.1))
+
+t = 1:length(data$wage)
+#AGE
+
+#run sequence
+plot(t,data$age,ylab="Y",xlab="Run Sequence",type="l",main="Age Run Sequence")
+#qqnorm
+qqnorm(data$age,main="Normality Test QQnorm of Age")
+qqline(data$age)
+#Lag plot
+plot(data$age,Lag(data$age, k=1),xlab="Y[i-1]",ylab="Y[i]", main="Lag Plot of Age k=1")
+#hitorgram
+hist(data$age, xlab="Y", main="Distribution of Age")
+```
+
+(a)(b)age
+Age data is normally distributed, judging by qqnorm and histogram; although the trend of qqnorm is not fully linear and the histogram is not absolute normal distribution.
+
+
+```{r}
+par(mfrow = c(2, 2),
+oma = c(0, 0, 2, 0),
+mar = c(5.1, 4.1, 2.1, 2.1))
+#WAGE
+
+#run sequence
+plot(t,data$wage,ylab="Y",xlab="Run Sequence",type="l",main="Wage Run Sequence")
+#qqnorm
+qqnorm(data$wage,main="Normality Test QQnorm of Wage")
+qqline(data$wage)
+#Lag plot
+plot(data$wage,Lag(data$wage, k=1),xlab="Y[i-1]",ylab="Y[i]", main="Lag Plot of Wage k=1")
+#hitorgram
+hist(data$wage, xlab="Y", main="Distribution of Wage")
+```
+
+(a)(c)wage
+The data of wage appear to be fairly low while only a very less amount of test subjects is relatively high. Data is not normally distributed, the qqnorm plot trend is not represent as linear, and the histogram is more concentrated to the lower numbers has a right tail. 
+
+
+
+```{r}
+par(mfrow = c(2, 2),
+oma = c(0, 0, 2, 0),
+mar = c(5.1, 4.1, 2.1, 2.1))
+#WAGE
+
+#run sequence
+plot(t,data$experience,ylab="Y",xlab="Run Sequence",type="l",main="Experience Run Sequence")
+#qqnorm
+qqnorm(data$experience,main="Normality Test QQnorm of Experience")
+qqline(data$experience)
+#Lag plot
+plot(data$experience,Lag(data$experience, k=1),xlab="Y[i-1]",ylab="Y[i]", main="Lag Plot of Experience k=1")
+#hitorgram
+hist(data$experience, xlab="Y", main="Distribution of Experience")
+```
+
+(a)(b)Experience
+The data of exprience appear to be random. Data not normally distributed, the qqnorm plot trend is nearly represent as linear, and the histogram is distributed normally while slighty more concentrated to the lower numbers. 
+
+
+```{r}
+confidence_interval = function(vec, prop = 0.95){
+# given feature vec, return confidence interval (default 95%) 
+CI=list()
+
+p = 1 - (1 - prop) / 2 
+n = length(vec)
+avg = mean(vec)
+stdev = sd(vec)
+error = qnorm(p)*stdev/sqrt(n)
+  # CI$data = vec
+CI$mean = avg 
+CI$stdev = stdev 
+CI$lower = avg-error 
+CI$upper = avg+error 
+return(CI)
+}
+
+```
+
+
+```{r}
+# Age's 95% confidence interval
+confidence_interval(data$age)
+```
+```{r}
+# Experence's 95% confidence interval
+confidence_interval(data$experience)
+```
+
+As the confidence interval, 
+1)Age has a 95% confidence interval for population mean (lower = 35.83873, upper = 37.82793). 
+The parameter for its normal distribution could be mean = 36.83333, stdev = 11.72657. 
+2)Experience has a 95% confidence interval for population mean (lower = 16.7721, upper = 18.87209). 
+The parameter for its normal distribution could be mean = 17.8221, stdev = 12.37971.
+
+
+```{r}
+#histogram sex
+par(mfrow = c(1, 2),
+oma = c(0, 0, 2, 0),
+mar = c(5.1, 4.1, 2.1, 2.1))
+
+female <- subset(data,sex=='1')
+hist(female$wage, xlab="Wage", main="Distribution of Female")
+
+male <- subset(data,sex=='0')
+hist(male$wage, xlab="Wage", main="Distribution of Male")
+```
+
+```{r}
+t.test(female$wage,male$wage)
+```
+
+(d)histogram and t-test
+The histgrams of male wage and female wage shows that the hostogram is significantly diiferent, male turns out to be more nirmally distributed.
+Based on the p-value, we are rejecting the null hypothesis, meaning that the distributions of male and female are different.
+
+
+#Part II
+
+```{r}
+library(stats)
+library(quantmod)
+#NFD
+y <- scan("NFD.txt")
+head(y)
+summary(y)
+```
+
+```{r}
+t = 1:length(y)
+
+par(mfrow = c(2, 2),
+oma = c(0, 0, 2, 0),
+mar = c(5.1, 4.1, 2.1, 2.1))
+
+plot(t,y,ylab="Y",xlab="Run Sequence",type="l", main="Data Run Sequence")
+plot(y,Lag(y, k=1),xlab="Y[i-1]",ylab="Y[i]", main="Lag Plot k=1")
+hist(y, xlab="Y", main="Distribution of Data")
+qqnorm(y,main="Normality Test QQnorm")
+qqline(y)
+```
+
+The NFD.txt file appears to be highly nomally distributed by observing the histogram and the qqnorm graph which stands out very linear distribution.
+
+```{r}
+#UFD
+x <- scan("UFD.txt")
+head(x)
+summary(x)
+```
+
+```{r}
+a = 1:length(x)
+
+par(mfrow = c(2, 2),
+oma = c(0, 0, 2, 0),
+mar = c(5.1, 4.1, 2.1, 2.1))
+
+plot(a,x,ylab="Y",xlab="Run Sequence",type="l", main="Data Run Sequence")
+plot(x,Lag(y, k=1),xlab="Y[i-1]",ylab="Y[i]", main="Lag Plot k=1")
+hist(x, xlab="Y", main="Distribution of Data")
+qqnorm(x,main="Normality Test QQnorm")
+qqline(x)
+```
+
+The UFD.txt file appears to be not nomally distributed by observing the histogram the data is evenly distribute; and the qqnorm graph showing an none linear trend.
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+---
+title: "RUN"
+author: "StevenChang"
+date: "12/06/2017"
+output: html_document
+---
+#Part I
+```{r}
+library(stats)
+library(quantmod)
+data = read.csv('global_terrorism.csv')
+#summary(data)
+#attach(data)
+```
+
+```{r}
+par(mfrow = c(2, 2),
+oma = c(0, 0, 2, 0),
+mar = c(5.1, 4.1, 2.1, 2.1))
+
+t = 1:length(data$nkill)
+#nkill
+
+#run sequence
+plot(t,data$nkill,ylab="Y",xlab="Run Sequence",type="l",main="nkill Run Sequence")
+#qqnorm
+qqnorm(data$nkill,main="Normality Test QQnorm of nkill")
+qqline(data$nkill)
+#Lag plot
+plot(data$nkill,Lag(data$nkill, k=1),xlab="Y[i-1]",ylab="Y[i]", main="Lag Plot of nkill k=1")
+#hitorgram
+hist(data$nkill, xlab="Y", main="Distribution of nkill")
+```
+```{r}
+par(mfrow = c(2, 2),
+oma = c(0, 0, 2, 0),
+mar = c(5.1, 4.1, 2.1, 2.1))
+
+t = 1:length(data$nkill)
+#country
+
+#run sequence
+plot(t,data$country,ylab="Y",xlab="Run Sequence",type="l",main="country Run Sequence")
+#qqnorm
+qqnorm(data$country,main="Normality Test QQnorm of country")
+qqline(data$country)
+#Lag plot
+plot(data$country,Lag(data$country, k=1),xlab="Y[i-1]",ylab="Y[i]", main="Lag Plot of country k=1")
+#hitorgram
+hist(data$country, xlab="Y", main="Distribution of country")
+```
+
+
+

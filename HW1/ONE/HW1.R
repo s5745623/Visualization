@@ -1,0 +1,9 @@
+library(ggplot2)
+data = read.csv('USA_Cancer_Stats_1999_2012_CDC_orgSite_New.csv')
+
+# select DC
+df_dc = subset(data, data['State']=='District of Columbia')
+ggplot(df_dc, aes(x=Race,y=Count,fill=LeadingCancerSites)) + geom_bar(stat='identity') + labs(title='The number of cancer sites of each race in DC') 
+# selcet Race
+white_df_dc = subset(df_dc, df_dc['Race']=='White')
+ggplot(white_df_dc, aes(x=LeadingCancerSites,y=Count,fill=Sex)) + geom_bar(stat='identity')  + labs(title='The number of cancer sites in White population in DC') 

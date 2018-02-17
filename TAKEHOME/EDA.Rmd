@@ -1,0 +1,53 @@
+---
+title: "EDA"
+author: "StevenChang"
+date: "12/05/2017"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+library(reshape2)
+library(ggthemes)
+require(gridExtra)
+library(forcats)
+
+data = read.csv('global_terrorism.csv')
+sink("data.txt")
+summary(data)
+sink()
+```
+
+
+```{r, fig.width=13,fig.height=8}
+
+g1<-ggplot(data, aes(iyear,region_txt,color=nkill,size = nkill)) + geom_point() + theme_solarized()+ ggtitle("Year and Continent")+theme(axis.text.x= element_text(angle = 65, vjust = 0.7))
+
+ggsave(file="EDA1.png", plot=g1, width=13, height=8)
+
+g2<-ggplot(data, aes(iyear,nkill,color=nkill)) + geom_point() + theme_solarized()+ ggtitle("Year and death count")
+
+ggsave(file="EDA2.png", plot=g2, width=13, height=8)
+
+g3<-ggplot(data, aes(targtype1_txt,attacktype1_txt,color=nkill,size = nkill)) + geom_point() + theme_solarized()+ ggtitle("TargetType and AttackType")+theme(axis.text.x= element_text(angle = 65, vjust = 0.7))+ aes(x = fct_inorder(targtype1_txt))
+
+ggsave(file="EDA3.png", plot=g3, width=13, height=8)
+
+```
+
+```{r, fig.width=13,fig.height=8}
+
+g4<-ggplot(data, aes(iyear,attacktype1_txt,color=nkill,size = nkill)) + geom_point() + theme_solarized()+ ggtitle("Year and Attack Type")+theme(axis.text.x= element_text(angle = 65, vjust = 0.7))
+
+ggsave(file="EDA4.png", plot=g4, width=13, height=8)
+
+g5<-ggplot(data, aes(iyear,nwound,color=nwound)) + geom_point() + theme_solarized()+ ggtitle("Year and Wound")
+
+ggsave(file="EDA5.png", plot=g5, width=13, height=8)
+
+g6<-ggplot(data, aes(region_txt,attacktype1_txt,color=nkill,size = nkill)) + geom_point() + theme_solarized()+ ggtitle("Continent and AttackType")+theme(axis.text.x= element_text(angle = 65, vjust = 0.7))+ aes(x = fct_inorder(region_txt))
+
+ggsave(file="EDA6.png", plot=g6, width=13, height=8)
+
+```
+

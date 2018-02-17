@@ -1,0 +1,85 @@
+---
+title: "HW8 Part1"
+author: "StevenYYChang"
+date: "11/1/2017"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+library(igraph)
+library(network)
+library(sna)
+library(ndtv)
+nodes <- read.csv("NODES.csv", header=T, as.is=T)
+links <- read.csv("EDGES.csv", header=T, as.is=T)
+
+net <- graph.data.frame(links,nodes,directed=T)
+```
+
+
+#1) Four networks using different layouts
+```{r}
+# set degree
+deg<-igraph::degree(net)
+V(net)$size <-deg*3
+
+V(net)$color <- as.numeric(factor(nodes$required.type))
+#set layout
+lay1 <- layout.circle(net)
+lay2 <- layout.sphere(net)
+lay3 <- layout.star(net)
+lay4 <- layout.fruchterman.reingold(net)
+
+#plot layouts
+par(mfrow=c(2,2), mar=c(0.5,0.5,0.5,0.5))
+plot(net, layout=lay1, edge.arrow.size=.3,vertex.color=V(net)$color, main = 'Circle Layout')
+plot(net, layout=lay2, edge.arrow.size=.3, main = 'Sphere Layout')
+plot(net, layout=lay3, edge.arrow.size=.3, main = 'Star Layout')
+plot(net, layout=lay4, edge.arrow.size=.3, main = 'Fruchterman-Reingold Layout')
+
+```
+
+
+#2)Heat map plot
+```{r}
+###Heatmaps
+netm <- get.adjacency(net,attr="weight", sparse=F)
+colnames(netm) <- V(net)$course
+rownames(netm) <- V(net)$course
+
+palf <- colorRampPalette(c("orange", "red"))
+heatmap(netm[,17:1], Rowv=NA, Colv=NA, col=palf(100),
+        scale="none", margins=c(10,10))
+```
+
+
+#3)Network colored by community
+```{r}
+# set community
+V(net)$community <- optimal.community(net)$membership
+colrs <- c("orange", "light green")
+
+lay = layout.kamada.kawai(net)
+
+plot(net,mark.groups = list(c(1,2,3), c(7:9)),
+mark.col=c("orange", "light green"),
+mark.border = NA)
+##Adding a legend
+legend(x=-1.5, y=-1.1, c('Group A','Group B'),
+       pch=21, col="#777777", pt.bg=colrs,pt.cex=2,cex=.8, bty="n", ncol=1)
+```
+
+
+#4)tkplot
+```{r}
+tkid<-tkplot(net)
+#get coordsfrom tkplot
+lay10 <-tkplot.getcoords(tkid)
+plot(net,lay10)
+```
+
+
+
+

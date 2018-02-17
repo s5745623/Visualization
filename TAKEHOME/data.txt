@@ -1,0 +1,296 @@
+    eventid              iyear          imonth            iday                       approxdate        extended          resolution    
+ Min.   :1.970e+11   Min.   :1970   Min.   : 0.000   Min.   : 0.00                        :162886   Min.   :0.00000           :168131  
+ 1st Qu.:1.990e+11   1st Qu.:1990   1st Qu.: 4.000   1st Qu.: 8.00   September 18-24, 2016:   101   1st Qu.:0.00000   8/4/98  :    18  
+ Median :2.007e+11   Median :2007   Median : 6.000   Median :15.00   12/1/16 0:00         :    85   Median :0.00000   2/23/88 :    11  
+ Mean   :2.002e+11   Mean   :2002   Mean   : 6.474   Mean   :15.47   5/29/16 0:00         :    57   Mean   :0.04363   1/8/10  :     8  
+ 3rd Qu.:2.014e+11   3rd Qu.:2014   3rd Qu.: 9.000   3rd Qu.:23.00   7/22/16 0:00         :    48   3rd Qu.:0.00000   10/14/05:     8  
+ Max.   :2.017e+11   Max.   :2016   Max.   :12.000   Max.   :31.00   8/8/16 0:00          :    42   Max.   :1.00000   2/22/94 :     8  
+                                                                     (Other)              :  7131                     (Other) :  2166  
+    country            country_txt        region                            region_txt               provstate           city       
+ Min.   :   4.0   Iraq       :22130   Min.   : 1.000   Middle East & North Africa:46511                   : 14502   Unknown:  9162  
+ 1st Qu.:  75.0   Pakistan   :13634   1st Qu.: 5.000   South Asia                :41497   Baghdad         :  7238   Baghdad:  7206  
+ Median :  98.0   Afghanistan:11306   Median : 6.000   South America             :18762   Northern Ireland:  4405   Karachi:  2609  
+ Mean   : 132.5   India      :10978   Mean   : 7.091   Western Europe            :16307   Balochistan     :  3377   Lima   :  2358  
+ 3rd Qu.: 160.0   Colombia   : 8163   3rd Qu.:10.000   Sub-Saharan Africa        :15491   Unknown         :  3199   Belfast:  2140  
+ Max.   :1004.0   Philippines: 6212   Max.   :12.000   Southeast Asia            :11453   Sindh           :  3146   Mosul  :  1775  
+                  (Other)    :97927                    (Other)                   :20329   (Other)         :134483   (Other):145100  
+    latitude        longitude         specificity       vicinity       
+ Min.   :-53.16   Min.   :-176.176   Min.   :1.000   Min.   :-9.00000  
+ 1st Qu.: 11.26   1st Qu.:   2.396   1st Qu.:1.000   1st Qu.: 0.00000  
+ Median : 31.47   Median :  43.130   Median :1.000   Median : 0.00000  
+ Mean   : 23.40   Mean   :  26.351   Mean   :1.454   Mean   : 0.06779  
+ 3rd Qu.: 34.74   3rd Qu.:  68.451   3rd Qu.:1.000   3rd Qu.: 0.00000  
+ Max.   : 74.63   Max.   : 179.367   Max.   :5.000   Max.   : 1.00000  
+ NA's   :4606     NA's   :4606       NA's   :4                         
+                                                                         location     
+                                                                             :122376  
+ The attack took place in Baghdad, Baghdad, Iraq.                            :   142  
+ Belfast (Capital City)                                                      :    98  
+ The incident occurred at the Donetsk Sergey Prokofiev International Airport.:    62  
+ Manhattan                                                                   :    60  
+ The attack took place in Mosul, Ninawa, Iraq.                               :    51  
+ (Other)                                                                     : 47561  
+                                                                                                                                                                                                                                                                                                                                                                  summary      
+                                                                                                                                                                                                                                                                                                                                                                      : 66138  
+ 09/00/2016: Sometime between September 18, 2016 and September 24, 2016, assailants detonated an explosive device at a civilian house in Dawr, Saladin, Iraq. There were no reported casualties resulting from the blast. No group claimed responsibility for the incident; however, sources attributed the attack to the Islamic State of Iraq and the Levant (ISIL).:   100  
+ 12/01/2016: Assailants detonated explosive devices that destroyed an electricity transmission tower in Albu Bali, Al Anbar, Iraq. This was one of 80 similar attacks targeting towers that resulted in the death of two military engineering team members. No group claimed responsibility for the incidents.                                                        :    80  
+ 05/29/2016: Security forces discovered and defused an explosives-rigged house in Sejar, Al Anbar, Iraq. No group claimed responsibility for the incident.                                                                                                                                                                                                            :    50  
+ 01/11/2016: Assailants set fire to a shop in Muqdadiyah, Diyala governorate, Iraq. There were no reported casualties in the incident. This was one of 36 shops set alight and one of 51 attacks in and around Muqdadiyah on the same day. No group claimed responsibility; however, sources attributed the incidents to Asa'ib Ahl al-Haqq and the Badr Brigades.    :    36  
+ 07/22/2016: Security forces discovered and defused an explosives-rigged house in Saqlawiyah, Al Anbar, Iraq. No group claimed responsibility for the incident.                                                                                                                                                                                                       :    36  
+ (Other)                                                                                                                                                                                                                                                                                                                                                              :103910  
+     crit1            crit2           crit3          doubtterr        alternative                       alternative_txt  
+ Min.   :0.0000   Min.   :0.000   Min.   :0.0000   Min.   :-9.0000   Min.   :1.00                               :143719  
+ 1st Qu.:1.0000   1st Qu.:1.000   1st Qu.:1.0000   1st Qu.: 0.0000   1st Qu.:1.00     Insurgency/Guerilla Action: 21324  
+ Median :1.0000   Median :1.000   Median :1.0000   Median : 0.0000   Median :1.00     Intra/Inter-group Conflict:  1236  
+ Mean   :0.9884   Mean   :0.993   Mean   :0.8798   Mean   :-0.5721   Mean   :1.29     Lack of Intentionality    :   248  
+ 3rd Qu.:1.0000   3rd Qu.:1.000   3rd Qu.:1.0000   3rd Qu.: 0.0000   3rd Qu.:1.00     Other Crime Type          :  3551  
+ Max.   :1.0000   Max.   :1.000   Max.   :1.0000   Max.   : 1.0000   Max.   :5.00     State Actors              :   272  
+                                                                     NA's   :143719                                      
+    multiple         success          suicide         attacktype1                         attacktype1_txt   attacktype2    
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.00000   Min.   :1.00   Bombing/Explosion             :83073   Min.   :1.00    
+ 1st Qu.:0.0000   1st Qu.:1.0000   1st Qu.:0.00000   1st Qu.:2.00   Armed Assault                 :40223   1st Qu.:2.00    
+ Median :0.0000   Median :1.0000   Median :0.00000   Median :3.00   Assassination                 :18402   Median :2.00    
+ Mean   :0.1342   Mean   :0.8964   Mean   :0.03387   Mean   :3.22   Hostage Taking (Kidnapping)   :10233   Mean   :3.67    
+ 3rd Qu.:0.0000   3rd Qu.:1.0000   3rd Qu.:0.00000   3rd Qu.:3.00   Facility/Infrastructure Attack: 9581   3rd Qu.:6.00    
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.00000   Max.   :9.00   Unknown                       : 6425   Max.   :9.00    
+                                                                    (Other)                       : 2413   NA's   :164720  
+                       attacktype2_txt    attacktype3                           attacktype3_txt     targtype1   
+                               :164720   Min.   :1.00                                   :169976   Min.   : 1.0  
+ Armed Assault                 :  3056   1st Qu.:2.00     Facility/Infrastructure Attack:   185   1st Qu.: 3.0  
+ Facility/Infrastructure Attack:  1371   Median :6.00     Armed Assault                 :   110   Median : 4.0  
+ Bombing/Explosion             :   485   Mean   :5.11     Hostage Taking (Kidnapping)   :    53   Mean   : 8.4  
+ Hostage Taking (Kidnapping)   :   479   3rd Qu.:7.00     Bombing/Explosion             :    16   3rd Qu.:14.0  
+ Assassination                 :   161   Max.   :7.00     Assassination                 :     4   Max.   :22.0  
+ (Other)                       :    78   NA's   :169976   (Other)                       :     6                 
+                     targtype1_txt    targsubtype1                                                   targsubtype1_txt 
+ Private Citizens & Property:39994   Min.   :  1.00   Unnamed Civilian/Unspecified                           : 10842  
+ Military                   :25508   1st Qu.: 22.00   Police Security Forces/Officers                        : 10625  
+ Police                     :22938   Median : 34.00                                                          :  9345  
+ Government (General)       :20314   Mean   : 46.87   Military Unit/Patrol/Convoy                            :  7881  
+ Business                   :19873   3rd Qu.: 74.00   Military Personnel (soldiers, troops, officers, forces):  7184  
+ Transportation             : 6657   Max.   :111.00   Government Personnel (excluding police, military)      :  6288  
+ (Other)                    :35066   NA's   :9345     (Other)                                                :118185  
+                        corp1             target1          natlty1            natlty1_txt       targtype2     
+                           :42529   Civilians :  5810   Min.   :   4.0   Iraq       : 21625   Min.   : 1.0    
+ Unknown                   :14147   Unknown   :  4892   1st Qu.:  83.0   Pakistan   : 13168   1st Qu.: 4.0    
+ Not Applicable            :10862   Soldiers  :  2688   Median : 102.0   India      : 11110   Median :14.0    
+ Iraqi Police Service (IPS): 3182   Patrol    :  2616   Mean   : 127.7   Afghanistan:  9669   Mean   :10.2    
+ Govt                      : 2786   Checkpoint:  2562   3rd Qu.: 175.0   Colombia   :  7783   3rd Qu.:14.0    
+ (Other)                   :96811   (Other)   :151781   Max.   :1004.0   Philippines:  5997   Max.   :22.0    
+ NA's                      :   33   NA's      :     1   NA's   :1394     (Other)    :100998   NA's   :160332  
+                     targtype2_txt     targsubtype2                           targsubtype2_txt                         corp2       
+                            :160332   Min.   :  1.00                                  :160749                             :161360  
+ Private Citizens & Property:  4937   1st Qu.: 14.00   Judge/Attorney/Court           :  2981   Not Applicable            :  2780  
+ Military                   :  1123   Median : 14.00   Unnamed Civilian/Unspecified   :   990   Unknown                   :   777  
+ Police                     :  1012   Mean   : 28.37   Multinational Corporation      :   738   Civilians                 :   708  
+ Business                   :   812   3rd Qu.: 47.00   Bank/Commerce                  :   471   Iraqi Volunteer Forces    :   157  
+ Government (General)       :   457   Max.   :109.00   Police Security Forces/Officers:   457   Somali National Army (SNA):   110  
+ (Other)                    :  1677   NA's   :160749   (Other)                        :  3964   (Other)                   :  4458  
+      target2          natlty2            natlty2_txt       targtype3                          targtype3_txt     targsubtype3   
+          :160456   Min.   :   4                :160644   Min.   : 1.00                               :169316   Min.   :  1.00  
+ Civilians:  2044   1st Qu.:  92     Iraq       :  1647   1st Qu.: 3.00    Private Citizens & Property:   467   1st Qu.: 26.00  
+ Soldiers :   240   Median :  98     Afghanistan:  1213   Median :14.00    Business                   :   110   Median : 67.00  
+ Civilian :   232   Mean   : 132     Pakistan   :   682   Mean   : 9.88    Police                     :    93   Mean   : 55.07  
+ Members  :   222   3rd Qu.: 182     India      :   583   3rd Qu.:14.00    Military                   :    79   3rd Qu.: 73.00  
+ Officers :   168   Max.   :1004     Somalia    :   525   Max.   :22.00    Government (General)       :    74   Max.   :109.00  
+ (Other)  :  6988   NA's   :160644   (Other)    :  5056   NA's   :169316   (Other)                    :   211   NA's   :169389  
+                                                targsubtype3_txt                               corp3               target3      
+                                                        :169389                                   :169466              :169317  
+ Unnamed Civilian/Unspecified                           :   273   Not Applicable                  :   242   Civilians  :   160  
+ Police Security Forces/Officers                        :    73   Civilians                       :    75   1 orphanage:    25  
+ Military Personnel (soldiers, troops, officers, forces):    53   Unknown                         :    69   Members    :    22  
+ Laborer (General)/Occupation Identified                :    45   Christian Religious Denomination:    25   Civilian   :    16  
+ House/Apartment/Residence                              :    39   Civilian                        :    10   Soldiers   :    15  
+ (Other)                                                :   478   (Other)                         :   463   (Other)    :   795  
+    natlty3            natlty3_txt                                                  gname      
+ Min.   :   4.0              :169344   Unknown                                         :78306  
+ 1st Qu.:  74.0   Iraq       :   124   Taliban                                         : 6575  
+ Median : 104.0   Afghanistan:   108   Shining Path (SL)                               : 4551  
+ Mean   : 139.6   Pakistan   :    51   Islamic State of Iraq and the Levant (ISIL)     : 4287  
+ 3rd Qu.: 182.0   India      :    50   Farabundo Marti National Liberation Front (FMLN): 3351  
+ Max.   :1004.0   Colombia   :    47   Al-Shabaab                                      : 2683  
+ NA's   :169344   (Other)    :   626   (Other)                                         :70597  
+                             gsubname                                              gname2      
+                                 :165159                                              :168610  
+ Militants                       :   480   Al-Nusrah Front                            :    56  
+ People's Liberation Forces (FPL):   427   Badr Brigades                              :    52  
+ Rebels                          :   163   National Liberation Army of Colombia (ELN) :    48  
+ Separatists                     :   120   Islamic State of Iraq and the Levant (ISIL):    42  
+ Guerrillas                      :   101   Palestinian Islamic Jihad (PIJ)            :    37  
+ (Other)                         :  3900   (Other)                                    :  1505  
+                                     gsubname2                                                gname3      
+                                          :170201                                                :170081  
+ The Family                               :    20   National Democratic Alliance Army (NDAA-ESSA):    15  
+ al-Quds Brigades                         :    10   Islamic State of Iraq and the Levant (ISIL)  :    14  
+ Intifadat Ahrar al-Iraq                  :    10   Free Syrian Army                             :    13  
+ Forces for the Defense of Democracy (FDD):     9   Lashkar-e-Taiba (LeT)                        :    13  
+ Fidayeen                                 :     8   Al-Nusrah Front                              :    11  
+ (Other)                                  :    92   (Other)                                      :   203  
+                     gsubname3     
+                          :170337  
+ Ahrar al-Sham            :     1  
+ Al-Alami                 :     1  
+ Al-Izzah; Jaish al-Tahrir:     1  
+ Al-Rahman Corps          :     1  
+ Commander Ibn al-Khattab :     1  
+ (Other)                  :     8  
+                                                                                                                                                                                                motive      
+                                                                                                                                                                                                   :121764  
+ Unknown                                                                                                                                                                                           : 14894  
+ The specific motive for the attack is unknown.                                                                                                                                                    : 14433  
+ The specific motive is unknown; however, sources noted that the attack may have been part of a larger trend of violence related to Bangladesh's nationwide hartal, which began on January 6, 2015.:   297  
+ The specific motive for the attack is unknown..                                                                                                                                                   :   148  
+ The specific motive for the attack is unknown or was not reported.                                                                                                                                :   144  
+ (Other)                                                                                                                                                                                           : 18670  
+  guncertain1      guncertain2      guncertain3       individual           nperps            nperpcap         claimed     
+ Min.   :0.0000   Min.   :0.00     Min.   :0.00     Min.   :0.000000   Min.   :  -99.00   Min.   :-99.00   Min.   :-9.00  
+ 1st Qu.:0.0000   1st Qu.:0.00     1st Qu.:0.00     1st Qu.:0.000000   1st Qu.:  -99.00   1st Qu.:  0.00   1st Qu.: 0.00  
+ Median :0.0000   Median :0.00     Median :0.00     Median :0.000000   Median :  -99.00   Median :  0.00   Median : 0.00  
+ Mean   :0.0844   Mean   :0.26     Mean   :0.18     Mean   :0.002483   Mean   :  -63.92   Mean   : -1.48   Mean   : 0.03  
+ 3rd Qu.:0.0000   3rd Qu.:1.00     3rd Qu.:0.00     3rd Qu.:0.000000   3rd Qu.:    1.00   3rd Qu.:  0.00   3rd Qu.: 0.00  
+ Max.   :1.0000   Max.   :1.00     Max.   :1.00     Max.   :1.000000   Max.   :25000.00   Max.   :406.00   Max.   : 1.00  
+ NA's   :379      NA's   :168669   NA's   :170085                      NA's   :71124      NA's   :69499    NA's   :66134  
+   claimmode                            claimmode_txt        claim2         claimmode2                           claimmode2_txt  
+ Min.   : 1.00                                 :154102   Min.   :-9.00    Min.   : 1.00                                 :169818  
+ 1st Qu.: 6.00    Personal claim               :  4128   1st Qu.: 0.00    1st Qu.: 6.00    Unknown                      :   185  
+ Median : 8.00    Posted to website, blog, etc.:  3689   Median : 0.00    Median : 7.00    Posted to website, blog, etc.:   131  
+ Mean   : 7.01    Unknown                      :  3673   Mean   : 0.24    Mean   : 7.22    Personal claim               :    61  
+ 3rd Qu.: 9.00    Call (post-incident)         :  1724   3rd Qu.: 1.00    3rd Qu.:10.00    Call (post-incident)         :    54  
+ Max.   :10.00    Note left at scene           :   980   Max.   : 1.00    Max.   :10.00    E-mail                       :    40  
+ NA's   :154102   (Other)                      :  2054   NA's   :168733   NA's   :169818   (Other)                      :    61  
+     claim3         claimmode3                           claimmode3_txt     compclaim        weaptype1     
+ Min.   :0.00     Min.   : 1.00                                 :170230   Min.   :-9.00    Min.   : 1.000  
+ 1st Qu.:0.00     1st Qu.: 5.50    Unknown                      :    33   1st Qu.:-9.00    1st Qu.: 5.000  
+ Median :0.00     Median : 8.00    Posted to website, blog, etc.:    27   Median :-9.00    Median : 6.000  
+ Mean   :0.45     Mean   : 7.09    Personal claim               :    19   Mean   :-6.42    Mean   : 6.429  
+ 3rd Qu.:1.00     3rd Qu.:10.00    E-mail                       :    15   3rd Qu.: 0.00    3rd Qu.: 6.000  
+ Max.   :1.00     Max.   :10.00    Call (post-incident)         :    12   Max.   : 1.00    Max.   :13.000  
+ NA's   :170087   NA's   :170230   (Other)                      :    14   NA's   :165595                   
+                   weaptype1_txt    weapsubtype1                                    weapsubtype1_txt   weaptype2     
+ Explosives/Bombs/Dynamite:86704   Min.   : 1.00   Unknown Explosive Type                   :42897   Min.   : 1.00   
+ Firearms                 :55273   1st Qu.: 5.00   Unknown Gun Type                         :30497   1st Qu.: 5.00   
+ Unknown                  :13852   Median :12.00                                            :19426   Median : 6.00   
+ Incendiary               :10459   Mean   :11.02   Automatic Weapon                         :17140   Mean   : 6.74   
+ Melee                    : 3338   3rd Qu.:16.00   Vehicle                                  : 9210   3rd Qu.: 8.00   
+ Chemical                 :  293   Max.   :30.00   Projectile (rockets, mortars, RPGs, etc.): 9183   Max.   :13.00   
+ (Other)                  :  431   NA's   :19426   (Other)                                  :41997   NA's   :158507  
+                   weaptype2_txt     weapsubtype2                       weapsubtype2_txt    weaptype3     
+                          :158507   Min.   : 1.00                               :159875   Min.   : 2.00   
+ Firearms                 :  4778   1st Qu.: 5.00    Unknown Gun Type           :  2362   1st Qu.: 5.00   
+ Explosives/Bombs/Dynamite:  2763   Median : 7.00    Automatic Weapon           :  1643   Median : 6.00   
+ Incendiary               :  2084   Mean   :10.67    Arson/Fire                 :  1325   Mean   : 6.87   
+ Melee                    :  1274   3rd Qu.:18.00    Unknown Explosive Type     :   996   3rd Qu.: 8.00   
+ Unknown                  :   655   Max.   :30.00    Knife or Other Sharp Object:   795   Max.   :13.00   
+ (Other)                  :   289   NA's   :159875   (Other)                    :  3354   NA's   :168690  
+                   weaptype3_txt     weapsubtype3                       weapsubtype3_txt    weaptype4     
+                          :168690   Min.   : 1.00                               :168843   Min.   : 5.00   
+ Firearms                 :   722   1st Qu.: 4.00    Unknown Gun Type           :   275   1st Qu.: 5.00   
+ Incendiary               :   311   Median : 7.00    Automatic Weapon           :   263   Median : 6.00   
+ Melee                    :   303   Mean   :11.51    Knife or Other Sharp Object:   214   Mean   : 6.24   
+ Explosives/Bombs/Dynamite:   199   3rd Qu.:19.00    Arson/Fire                 :   156   3rd Qu.: 6.00   
+ Unknown                  :    47   Max.   :28.00    Handgun                    :    90   Max.   :12.00   
+ (Other)                  :    78   NA's   :168843   (Other)                    :   509   NA's   :170276  
+                   weaptype4_txt     weapsubtype4                                     weapsubtype4_txt              weapdetail   
+                          :170276   Min.   : 2.00                                             :170279                    :59385  
+ Explosives/Bombs/Dynamite:    27   1st Qu.: 3.00    Automatic Weapon                         :    16   Explosive        :20925  
+ Firearms                 :    29   Median : 8.00    Unknown Explosive Type                   :    11   Automatic firearm:12420  
+ Incendiary               :    10   Mean   :10.79    Projectile (rockets, mortars, RPGs, etc.):     7   Pistol           : 4473  
+ Melee                    :     7   3rd Qu.:16.00    Grenade                                  :     6   Incendiary       : 4156  
+ Other                    :     1   Max.   :28.00    Unknown Gun Type                         :     6   Firearm          : 4053  
+                                    NA's   :170279   (Other)                                  :    25   (Other)          :64938  
+     nkill             nkillus           nkillter          nwound          nwoundus         nwoundte        property     
+ Min.   :   0.000   Min.   :   0.00   Min.   :  0.00   Min.   :   0.0   Min.   :  0.00   Min.   :  0.0   Min.   :-9.000  
+ 1st Qu.:   0.000   1st Qu.:   0.00   1st Qu.:  0.00   1st Qu.:   0.0   1st Qu.:  0.00   1st Qu.:  0.0   1st Qu.: 0.000  
+ Median :   0.000   Median :   0.00   Median :  0.00   Median :   0.0   Median :  0.00   Median :  0.0   Median : 1.000  
+ Mean   :   2.387   Mean   :   0.05   Mean   :  0.48   Mean   :   3.2   Mean   :  0.04   Mean   :  0.1   Mean   :-0.506  
+ 3rd Qu.:   2.000   3rd Qu.:   0.00   3rd Qu.:  0.00   3rd Qu.:   2.0   3rd Qu.:  0.00   3rd Qu.:  0.0   3rd Qu.: 1.000  
+ Max.   :1500.000   Max.   :1358.00   Max.   :500.00   Max.   :7366.0   Max.   :751.00   Max.   :200.0   Max.   : 1.000  
+ NA's   :9682       NA's   :64459     NA's   :66663    NA's   :15325    NA's   :64710    NA's   :68749                   
+   propextent                                          propextent_txt     propvalue         
+ Min.   :1.0                                                  :109805   Min.   :       -99  
+ 1st Qu.:3.0      Catastrophic (likely > $1 billion)          :     6   1st Qu.:       -99  
+ Median :3.0      Major (likely > $1 million but < $1 billion):   904   Median :       -99  
+ Mean   :3.3      Minor (likely < $1 million)                 : 40569   Mean   :    229057  
+ 3rd Qu.:4.0      Unknown                                     : 19066   3rd Qu.:      2500  
+ Max.   :4.0                                                            Max.   :2700000000  
+ NA's   :109805                                                         NA's   :134863      
+                                                    propcomment       ishostkid           nhostkid          nhostkidus    
+                                                          :115919   Min.   :-9.00000   Min.   :  -99.00   Min.   :-99.00  
+ It is unknown if any property was damaged in this attack.:  6953   1st Qu.: 0.00000   1st Qu.:    1.00   1st Qu.:  0.00  
+ A vehicle was damaged in this attack.                    :  3118   Median : 0.00000   Median :    2.00   Median :  0.00  
+ It is unknown if the attack caused any property damage.  :  2930   Mean   : 0.05918   Mean   :    4.51   Mean   : -0.38  
+ The attack caused an unknown amount of property damage.  :  1639   3rd Qu.: 0.00000   3rd Qu.:    4.00   3rd Qu.:  0.00  
+ A house was damaged in this attack.                      :  1446   Max.   : 1.00000   Max.   :17000.00   Max.   : 86.00  
+ (Other)                                                  : 38345   NA's   :178        NA's   :157858     NA's   :157913  
+     nhours           ndays                 divert           kidhijcountry        ransom        ransomamt           ransomamtus       
+ Min.   :-99.00   Min.   : -99.00              :170037              :167051   Min.   :-9.00   Min.   :       -99   Min.   :      -99  
+ 1st Qu.:-99.00   1st Qu.: -99.00   Unknown    :    27   Colombia   :   687   1st Qu.: 0.00   1st Qu.:         0   1st Qu.:        0  
+ Median :  0.00   Median : -99.00   Afghanistan:    11   Guatemala  :   204   Median : 0.00   Median :     14200   Median :        0  
+ Mean   :-42.75   Mean   : -31.89   Libya      :    11   Philippines:   183   Mean   :-0.14   Mean   :   3224502   Mean   :   451992  
+ 3rd Qu.:  0.00   3rd Qu.:   4.00   South Sudan:    11   India      :   143   3rd Qu.: 0.00   3rd Qu.:    400000   3rd Qu.:        0  
+ Max.   :999.00   Max.   :2454.00   Iraq       :    10   Lebanon    :   139   Max.   : 1.00   Max.   :1000000000   Max.   :132000000  
+ NA's   :166649   NA's   :162942    (Other)    :   243   (Other)    :  1943   NA's   :94037   NA's   :169071       NA's   :169854     
+   ransompaid        ransompaidus                                                                                    ransomnote    
+ Min.   :     -99   Min.   :  -99.0                                                                                       :169879  
+ 1st Qu.:     -99   1st Qu.:    0.0   0                                                                                   :    35  
+ Median :       0   Median :    0.0   It is unknown if a ransom was demanded in this kidnapping.                          :    28  
+ Mean   :  384966   Mean   :  272.5   It is unknown if any ransom was demanded in this kidnapping.                        :    24  
+ 3rd Qu.:     736   3rd Qu.:    0.0   It is unknown if ransom was demanded in this kidnapping.                            :     8  
+ Max.   :41000000   Max.   :48000.0   It was reported that the perpetrators demanded one million dollars for each hostage.:     7  
+ NA's   :169643     NA's   :169863    (Other)                                                                             :   369  
+ hostkidoutcome                                       hostkidoutcome_txt   nreleased      
+ Min.   :1.00                                                  :160439   Min.   : -99.00  
+ 1st Qu.:2.00     Unknown                                      :  3260   1st Qu.: -99.00  
+ Median :4.00     Hostage(s) released by perpetrators          :  2849   Median :   0.00  
+ Mean   :4.62     Hostage(s) killed (not during rescue attempt):  2229   Mean   : -28.72  
+ 3rd Qu.:7.00     Combination                                  :   906   3rd Qu.:   1.00  
+ Max.   :7.00     Successful Rescue                            :   496   Max.   :1201.00  
+ NA's   :160439   (Other)                                      :   171   NA's   :161028   
+                                                                                                                                      addnotes     
+                                                                                                                                          :144911  
+ Casualty numbers for this incident conflict across sources. Following GTD protocol, the majority reliable estimates are reported here.   :  1518  
+ Casualty numbers for this incident conflict across sources. Following GTD protocol, the lowest reliable estimates are reported here.     :  1488  
+ Casualty numbers for this incident conflict across sources. Following GTD protocol, the most recent reliable estimates are reported here.:   548  
+ Casualty numbers for this incident conflict across sources. Following GTD protocol, the most reliable estimates are reported here.       :   434  
+ Casualty numbers for this attack conflict across sources. Following GTD protocol, the lowest reliable estimates are reported here.       :   330  
+ (Other)                                                                                                                                  : 21121  
+                                                                                                                                               scite1      
+                                                                                                                                                  : 66200  
+ Committee on Government Operations United States Senate, "Riots, Civil, and Criminal Disorders," U.S. Government Printing Office, August 6, 1970.:   205  
+ "ISIS detonates 5 empty homes in Daur using IEDs," Iraqi News, September 28, 2016.                                                               :   106  
+ "Iraq: Roundup of Security Incidents 18-24 March 2014," OSC Summary, March 25, 2014.                                                             :    92  
+ "Attack on 80 electricity towers in Anbar leaves 2 casualties," Iraqi News, December 1, 2016.                                                    :    80  
+ Edward F. Mickolus, Terrorism, 1996-2001 : A Chronology, Imprint Westport, CT: Greenwood Press, 2002.                                            :    77  
+ (Other)                                                                                                                                          :103590  
+                                                                                                                           scite2      
+                                                                                                                              :100765  
+ Christopher Hewitt, "Political Violence and Terrorism in Modern America: A Chronology," Praeger Security International, 2005.:   134  
+ "Iraq: Security Roundup 1900 GMT 27 September 2016," Summary, September 27, 2016.                                            :   100  
+ "Attack on 80 electricity towers in Anbar leaves 2 casualties," Iraqi News, December 1, 2016.                                :    63  
+ "IS ignites sectarian tensions in multiple Iraq bombings," Middle East Eye, January 12, 2016.                                :    43  
+ “Terrorist Attacks: The Positive Outcomes,” The Jakarta Post, December 26, 2002.                                             :    39  
+ (Other)                                                                                                                      : 69206  
+                                                                                                                                   scite3      
+                                                                                                                                      :131133  
+ Christopher Hewitt, "Political Violence and Terrorism in Modern America: A Chronology," Praeger Security International, 2005.        :   139  
+ "Iraq Security Roundup 27 September - 3 October 2016," Summary, September 27, 2016.                                                  :   101  
+ "Chronological History of Arsons and Bombings Against Abortion Providers," National Abortion Federation.                             :    59  
+ "Rights group: Iraqi Shia militias behind revenge attacks," Al Ahram, January 31, 2016.                                              :    51  
+ “'At Least' 15 People Killed in Christmas Eve Bombings Across Indonesia,” The Jakarta Post (Internet Version-WWW), December 25, 2000.:    39  
+ (Other)                                                                                                                              : 38828  
+                     dbsource        INT_LOG          INT_IDEO         INT_MISC           INT_ANY      
+ START Primary Collection:66785   Min.   :-9.000   Min.   :-9.000   Min.   :-9.00000   Min.   :-9.000  
+ PGIS                    :63749   1st Qu.:-9.000   1st Qu.:-9.000   1st Qu.: 0.00000   1st Qu.:-9.000  
+ ISVG                    :17210   Median :-9.000   Median :-9.000   Median : 0.00000   Median : 0.000  
+ CETIS                   :16165   Mean   :-4.583   Mean   :-4.511   Mean   : 0.09108   Mean   :-3.975  
+ CAIN                    : 1588   3rd Qu.: 0.000   3rd Qu.: 0.000   3rd Qu.: 0.00000   3rd Qu.: 0.000  
+ UMD Schmid 2012         : 1166   Max.   : 1.000   Max.   : 1.000   Max.   : 1.00000   Max.   : 1.000  
+ (Other)                 : 3687                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           related      
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               :147505  
+ 201612010023, 201612010024, 201612010025, 201612010026, 201612010027, 201612010028, 201612010029, 201612010030, 201612010031, 201612010032, 201612010033, 201612010034, 201612010035, 201612010036, 201612010037, 201612010038, 201612010039, 201612010040, 201612010041, 201612010042, 201612010043, 201612010044, 201612010045, 201612010046, 201612010047, 201612010048, 201612010049, 201612010050, 201612010051, 201612010052, 201612010053, 201612010054, 201612010055, 201612010056, 201612010057, 201612010058, 201612010059, 201612010060, 201612010061, 201612010062, 201612010063, 201612010064, 201612010065, 201612010066, 201612010067, 201612010068, 201612010069, 201612010070, 201612010071, 201612010072, 201612010073, 201612010074, 201612010075, 201612010076, 201612010077, 201612010078, 201612010079, 201612010080, 201612010081, 201612010082, 201612010083, 201612010084, 201612010085, 201612010086, 201612010087, 201612010088, 201612010089, 201612010090, 201612010091, 201612010092, 201612010093, 201612010094, 201612010095, 201612010096, 201612010097, 201612010098, 201612010099, 201612010100, 201612010101, 201612010102:    80  
+ 201601110033, 201601110034, 201601110035, 201601110036, 201601110037, 201601110038, 201601110039, 201601110040, 201601110041, 201601110042, 201601110043, 201601110044, 201601110045, 201601110046, 201601110047, 201601110048, 201601110049, 201601110050, 201601110051, 201601110052, 201601110053, 201601110054, 201601110055, 201601110056, 201601110057, 201601110058, 201601110059, 201601110060, 201601110061, 201601110062, 201601110063, 201601110064, 201601110065, 201601110066, 201601110067, 201601110068, 201601110069, 201601110070, 201601110071, 201601110072, 201601110073, 201601110074, 201601110075, 201601120029, 201601120030, 201601120031, 201601120032, 201601120033, 201601120034, 201601120035, 201601120037                                                                                                                                                                                                                                                                                                                                                                                                                      :    51  
+ 201008250017, 201008250019, 201008250020, 201008250022, 201008250023, 201008250024, 201008250025, 201008250026, 201008250027, 201008250028, 201008250029, 201008250030, 201008250031, 201008250032, 201008250033, 201008250034, 201008250035, 201008250036, 201008250037, 201008250038, 201008250039, 201008250040, 201008250041, 201008250042 and 201008250043                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               :    25  
+ 201603130052, 201603130053, 201603130054, 201603130055, 201603130056, 201603130057, 201603130058, 201603130059, 201603130060, 201603130061, 201603130062, 201603130063, 201603130064, 201603130065, 201603130066, 201603130067, 201603130068, 201603130069, 201603130070, 201603130071, 201603130072, 201603130073, 201603130074, 201603130075, 201603130076                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  :    25  
+ 201607150033, 201607150037, 201607150039, 201607150040, 201607150041, 201607150042, 201607150043, 201607150044, 201607150045, 201607150046, 201607150047, 201607150048, 201607150049,201607150050, 201607150051, 201607150052, 201607160039, 201607160050, 201607160052, 201607160054                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         :    20  
+ (Other)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       : 22644  

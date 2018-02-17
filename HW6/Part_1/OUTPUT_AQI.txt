@@ -1,0 +1,5 @@
+22202,VA,Northern Virginia,38.834,-77.276,21
+20008,DC,Metropolitan Washington,38.919,-77.013,21
+20007,DC,Metropolitan Washington,38.919,-77.013,21
+08816,NJ,New Brunswick,40.4728,-74.4225,30
+20009,DC,Metropolitan Washington,38.919,-77.013,21

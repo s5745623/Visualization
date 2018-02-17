@@ -1,0 +1,24 @@
+---
+title: "Marvel"
+author: "StevenChang"
+date: "11/21/2017"
+output: html_document
+---
+
+```{r}
+library(igraph)
+library(network)
+library(sna)
+library(ndtv)
+nodes <- read.csv("NONO.csv", header=T, as.is=T)
+links <- read.csv("heroedges.csv", header=T, as.is=T)
+nodes= subset(nodes,type=='hero')
+links= subset(links,weight>500)
+
+links<- aggregate(links$weight,by=list(from=links$hero1, to=links$hero2, type=links$weight),sum)
+#links <- links[order(links$hero1, links$hero2),]
+rownames(links) <- NULL
+net <- graph.data.frame(links,nodes,directed=T)
+net <- simplify(net,remove.multiple=F, remove.loops=T)
+plot(net, edge.arrow.size=.3, vertex.label=NA)
+```

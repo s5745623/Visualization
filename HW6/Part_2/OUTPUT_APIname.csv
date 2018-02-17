@@ -1,0 +1,4 @@
+address_number,agency,city,crimename1,crimename2,crimename3,date,district,place,police_district_number,start_date,state,victims
+11100.0,MCPD,SILVER SPRING,Crime Against Property,Shoplifting,LARCENY - SHOPLIFTING,2016-11-30T17:47:10.000,WHEATON,Retail - Mall,4D,2016-11-30T17:47:00.000,MD,1
+1500.0,RCPD,POTOMAC,Crime Against Property,Burglary/Breaking and Entering,BURGLARY - FORCED ENTRY-NONRESIDENTIAL,2016-08-08T10:34:10.000,ROCKVILLE,Recreation Center,1D,2016-08-07T17:00:00.000,MD,1
+,GPD,GAITHERSBURG,Crime Against Society,Driving Under the Influence,DRIVING UNDER THE INFLUENCE LIQUOR,2016-08-06T04:05:31.000,MONTGOMERY VILLAGE,Street - In vehicle,6D,2016-08-06T04:01:00.000,MD,1
